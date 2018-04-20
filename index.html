@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="css/index.css">
+        <link rel="shortcut icon" href="img/logo.png">
+        <link rel="stylesheet" href="css/swiper-4.2.0.min.css">
+        <link rel="stylesheet" href="http://at.alicdn.com/t/font_608963_pz39xf5brx4gf1or.css">
+        <title>天气</title>
+        <script src="js/rem.js"></script>
+        <script src="js/swiper-4.2.0.min.js"></script>
+        <script src="js/jquery3.2.1.min.js"></script>
+        <script src="js/index.js"></script>
+    </head>
+    <body>
+       
+    <!-- 头部开始 -->
+    <header class="hide">
+    	<div class="city"></div>
+    	<div class="zhuangkuang">
+    		<h2>空气</h2>
+    		<h3></h3>
+    	</div>
+    	<h1 class="temperature"> </h1>
+    	<h2 class="condition"></h2>
+    	<div class="shidu">
+            <h3>湿度</h3>
+            <h3 class="shuju">57%</h3>
+        </div>
+        <h2 class="tip">你若安好，便是晴天～</h2>
+    </header>
+    <!-- 头部结束 -->
+    <!-- 天气开始 -->
+    <section class="weather hide">
+        <div class="days">
+            <div class="today">
+                <div class="tianqi">
+                    <p>今天</p>
+                    <div class="wendu">
+                    <h1 id="dat_high_temperature"><!-- 17 --></h1>
+                    <h1>/</h1>
+                    <h1 id="dat_low_temperature"><!-- 3° --></h1>
+                    </div> 
+                </div>
+                <div class="yinqing">
+                    <div class="yinqing1"><!-- 晴转多云 --></div>
+                    <div class="tu"></div>
+                </div>
+            </div>
+            <div class="tomorrow">
+                <div class="tianqi">
+                <p>明天</p>
+                <div class="wendu">
+                    <h1 id="tomorrow_high_temperature"><!-- 17 --></h1>
+                    <h1>/</h1>
+                    <h1 id="tomorrow_low_temperature"><!-- 5° --></h1>
+                </div>
+                </div>
+                <div class="yinqing">
+                    <div class="yinqing1"><!-- 多云 --></div>
+                    <div class="tu1" ></div>
+                </div>
+            </div>
+            </div>
+    </section>
+    <!-- 天气结束 -->
+    <!-- 温度变化开始 -->
+    <section class="hide">
+        <div class="change">
+            <div class="change1">
+            </div>
+        </div>
+        <div class="shiwutian">
+            <div class="shiwutian1">
+                <!-- <div class="shiwutian2">
+                    <div class="con_text">今天</div>
+                    <div class="con_wea">
+                       <span id="date_month">3</span>
+                       <span>/</span>
+                       <span>21</span>
+                    </div>
+                    <div class="con_weah">多云</div>
+                    <div class="con_pich"></div>
+                    <div class="con_high">28°</div>
+                    <div class="con_low">18°</div>
+                    <div class="con_wind">南风</div>
+                    <div class="con_level">3级</div>
+                </div> -->
+               
+            </div>
+        </div>
+    </section>
+    <!-- 温度变化结束 -->
+    <!-- 服务 -->
+    <div class="swiper-container hide">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <ul class="fuwu_box">
+                    <li>
+                        <i style="color:#a4ade0;" class="iconfont icon-che"></i>
+                        <h2>3和8</h2>
+                        <h3>尾号限行</h3>
+                    </li>
+                    <li>
+                        <i style="color:#e4afcb;" class="iconfont icon-yifu"></i>
+                        <h2>较冷</h2>
+                        <h3>穿衣</h3>
+                    </li>
+                    <li>
+                        <i style="color:#c1a4e0;" class="iconfont icon-san"></i>
+                        <h2>不带伞</h2>
+                        <h3>雨伞</h3>
+                    </li>
+                    <li>
+                        <i style="color:#dfc79c;" class="iconfont icon-zhongxiyaopin"></i>
+                        <h2>较易发</h2>
+                        <h3>感冒</h3>
+                    </li>
+                    <li>
+                        <i style="color:#1afa29;" class="iconfont icon-lvyou"></i>
+                        <h2>适宜</h2>
+                        <h3>旅游</h3>
+                    </li>
+                    <li>
+                        <i style="color:#1296db;" class="iconfont icon-jiaotongdeng"></i>
+                        <h2>良好</h2>
+                        <h3>交通</h3>
+                    </li>
+                    <li>
+                        <i style="color:#dfc79c;" class="iconfont icon-kongqizhiyiban"></i>
+                        <h2>中</h2>
+                        <h3>空气质量</h3>
+                    </li>
+                    <li>
+                        <i style="color:#00e63f;" class="iconfont icon-smiling"></i>
+                        <h2>舒适</h2>
+                        <h3>舒适度</h3>
+                    </li>
+                </ul>
+            </div>
+            <div class="swiper-slide"> 
+                <ul class="fuwu_box2"> 
+                    <li> 
+                        <i style="color:#b5e6a8;" class="iconfont icon-xiche"></i>
+                        <h2>较适宜</h2>
+                        <h3>洗车</h3>
+                    </li>
+                    <li>
+                        <i style="color:#e6d99d;" class="iconfont icon-yundong"></i>
+                        <h2>适宜</h2>
+                        <h3>运动</h3>
+                    </li>
+                    <li>
+                        <i style="color:#dfb7ab;" class="iconfont icon-taiyang"></i>
+                        <h2>较弱</h2>
+                        <h3>防晒</h3>
+                    </li>
+                    <li>
+                        <i style="color:#a3dfd4;" class="iconfont icon-yu"></i>
+                        <h2>适宜</h2>
+                        <h3>钓鱼</h3>
+                    </li>
+                    <li>
+                        <i style="color:#13227a;" class="iconfont icon-hangeryijia"></i>
+                        <h2>适宜</h2>
+                        <h3>晾晒</h3>
+                    </li>
+                    <li>
+                        <i style="color:#d4237a;" class="iconfont icon-huazhuangpin"></i>
+                        <h2>防晒</h2>
+                        <h3>化妆</h3>
+                    </li>
+                    <li>
+                        <i style="color:#a4ade0;" class="iconfont icon-yundong1"></i>
+                        <h2>适宜</h2>
+                        <h3>晨练</h3>
+                    </li>
+                    <li>
+                        <i style="color:#1296db;" class="iconfont icon-guomin-copy"></i>
+                        <h2>易发</h2>
+                        <h3>过敏</h3>
+                    </li>
+                </ul> 
+            </div>
+        </div>
+        <!-- 如果需要分页器 -->
+        <div class="swiper-pagination"></div>   
+    </div>
+    <!-- </section> -->
+    <!-- 服务结束 -->
+    <!-- 城市开始 -->
+      
+    <div class="location">
+        <!-- 搜索框 -->
+        <div class="search">
+            <div class="searcher">
+                <div class="seacher_box1">
+                    <i class="iconfont icon-sousuo"></i>
+                    <input type="text" placeholder="搜索地区/景点">
+                </div>
+                <a class="seacher_box2">取消</a>
+            </div>
+        </div>
+        <!-- 搜索框结束 -->
+        <div class="hotcity">
+                <h1 class="biaoti">热门城市</h1>
+             <!--    <div class="tour">山西</div>
+                <div class="tour_box1">
+                        <div class="tour_box">太原</div>
+                        <div class="tour_box">吕梁</div>
+                        <div class="tour_box">大同</div>
+                </div> -->
+        </div> 
+    </div>
+        
+
+    <!-- 城市结束-->
+    <script>        
+  var mySwiper = new Swiper ('.swiper-container', {
+    direction: 'horizontal',
+    loop: true,
+    
+    // 如果需要分页器
+    pagination: {
+      el: '.swiper-pagination',
+    },
+  })        
+  </script>
+    </body>
+</html>
